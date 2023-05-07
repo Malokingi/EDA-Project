@@ -3,7 +3,7 @@ Practicum Sprint 7: Exploring and Cleaning Data with Pandas (Exploratory Data An
 
 ## To Do:
 ### Data Preprocessing
-- [ ] Load Datasets
+- [x] Load Datasets
 - [ ] Handle Data Types
 - [ ] Handle Missing Values
 - [ ] Handle Duplicate Data
@@ -16,7 +16,7 @@ Practicum Sprint 7: Exploring and Cleaning Data with Pandas (Exploratory Data An
     - [ ] Plot how many days pass between people placeing orders
     - [ ] Remark on findings
 - [ ] Intermediate Part
-    - [ ] Plot hour of day orders were places on Saturdays and Wednesdays
+    - [ ] Plot hour of day orders were placed on Saturdays and Wednesdays
     - [ ] Plot how many people place how many orders
     - [ ] Show `id` and `name` of top 20 Products by order frequency
     - [ ] Remark on findings
