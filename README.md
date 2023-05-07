@@ -4,9 +4,10 @@ Practicum Sprint 7: Exploring and Cleaning Data with Pandas (Exploratory Data An
 ## To Do:
 ### Data Preprocessing
 - [x] Load Datasets
+- [x] Handle Column Names
+- [x] Handle Duplicate Data
 - [ ] Handle Data Types
 - [ ] Handle Missing Values
-- [ ] Handle Duplicate Data
 
 ### Code
 - [ ] Easy Part
