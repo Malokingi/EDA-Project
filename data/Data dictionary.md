@@ -35,7 +35,7 @@
     - `order_hour_of_day`: hour of the day that the order was placed
         - Since the values for this are within 0 to 255, let's change this to an **uint8**
     - `days_since_prior_order`: number of days since this customer placed their previous order
-        - Since the values for this are within 0 to 255, let's change this to an **uint8**
+        - Since the some values are empty, we'll leave this unchanged
     - `day_of_week`: Name of the day of the week, assuming `order_dow` 0 = Sunday and the following numbers are consecutive days of the week
         - New column, as **String**
 
@@ -47,6 +47,7 @@
     - `cart_item_id`: the sequential order in which each item was placed in the cart
         - rename from `add_to_cart_order` to `cart_item_id`
         - A Composite Key since a user can order more than one of the same item, but there's no variable for `quantity`, so the dequence it's placed in the cart will have to indicate purchasing multiple
+        - There are some missing, but it's only 0.0186% of the entried, so I'll just drop them
         - Since the values for this are within 0 to 255, let's change this to an **uint8**
     - `reordered`: 0 if the customer has never ordered this product before, 1 if they have
         - Since the values for this are within 0 to 255, let's change this to an **uint8**
@@ -70,6 +71,7 @@
     - `name`: name of the product
         - rename from `product_name` to `name`
         - Looks like a few of these are missing, fill in those names with **__unknown__**
+        - Also, convert this to lowercase before checking for duplicates
     - `aisle_id`: ID number that uniquely identifies each grocery aisle category
         - As a Foriegn Key, let's change this to a **string**
     - `department_id`: ID number that uniquely identifies each grocery department category

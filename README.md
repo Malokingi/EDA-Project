@@ -6,8 +6,9 @@ Practicum Sprint 7: Exploring and Cleaning Data with Pandas (Exploratory Data An
 - [x] Load Datasets
 - [x] Handle Column Names
 - [x] Handle Duplicate Data
-- [ ] Handle Data Types
-- [ ] Handle Missing Values
+- [x] Handle Data Types
+    - [x] make sure changing from `float`s to `int`s doesn't courrupt any data
+- [x] Handle Missing Values
 
 ### Code
 - [ ] Easy Part
