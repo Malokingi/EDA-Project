@@ -35,7 +35,8 @@
     - `order_hour_of_day`: hour of the day that the order was placed
         - Since the values for this are within 0 to 255, let's change this to an **uint8**
     - `days_since_prior_order`: number of days since this customer placed their previous order
-        - Since the some values are empty, we'll leave this unchanged
+        - Replace all the NaN values with -1, presumably because the customer in question has not ordered since that order
+        - change to **int8**
     - `day_of_week`: Name of the day of the week, assuming `order_dow` 0 = Sunday and the following numbers are consecutive days of the week
         - New column, as **String**
 

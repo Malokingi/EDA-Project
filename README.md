@@ -11,12 +11,12 @@ Practicum Sprint 7: Exploring and Cleaning Data with Pandas (Exploratory Data An
 - [x] Handle Missing Values
 
 ### Code
-- [ ] Easy Part
-    - [ ] Make sure `order_dow` and `order_hour_of_day` values make sense
-    - [ ] Plot how many people place orders by `order_hour_of_day`
-    - [ ] Plot how many people place orders by `order_dow`
-    - [ ] Plot how many days pass between people placeing orders
-    - [ ] Remark on findings
+- [x] Easy Part
+    - [x] Make sure `order_dow` and `order_hour_of_day` values make sense
+    - [x] Plot how many people place orders by `order_hour_of_day`
+    - [x] Plot how many people place orders by `order_dow`
+    - [x] Plot how many days pass between people placeing orders
+    - [x] Remark on findings
 - [ ] Intermediate Part
     - [ ] Plot hour of day orders were placed on Saturdays and Wednesdays
     - [ ] Plot how many people place how many orders
