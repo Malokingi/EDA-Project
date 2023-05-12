@@ -1,28 +1,22 @@
 - `aisles.csv`
-    - `id`: ID number that uniquely identifies each grocery aisle category
-        - rename from `aisle_id` to `id`
+    - `aisle_id`: ID number that uniquely identifies each grocery aisle category
         - As a Primary Key, let's change this to a **string**
-        - Let's also set the **index** to this
     - `name`: name of the aisle
         - rename from `aisle` to `name`
         - Keep this a **string**
 
 - `departments.csv`
-    - `id`: ID number that uniquely identifies each grocery department category
-        - rename from `department_id` to `id`
+    - `department_id`: ID number that uniquely identifies each grocery department category
         - As a Primary Key, let's change this to a **string**
-        - Let's also set the **index** to this
     - `name`: name of the department
         - rename from `department` to `name`
         - Keep this a **string**
 
 - `instacart_orders.csv`: each row corresponds to one order on the Instacart app
-    - `id`: ID number that uniquely identifies each order
+    - `order_id`: ID number that uniquely identifies each order
         - 0.0031% of these values are duplicate, maybe a mistake?
             - After dropping dup;licate rows, all cols are unique
-        - rename from `order_id` to `id`
         - As a Primary Key, let's change this to a **string**
-        - Let's also set the **index** to this
     - `user_id`: ID number that uniquely identifies each customer account
         - As a Foriegn Key, let's change this to a **string**
     - `user_order_number`: the number of times this customer has placed an order
@@ -35,7 +29,8 @@
     - `order_hour_of_day`: hour of the day that the order was placed
         - Since the values for this are within 0 to 255, let's change this to an **uint8**
     - `days_since_prior_order`: number of days since this customer placed their previous order
-        - Since the some values are empty, we'll leave this unchanged
+        - Replace all the NaN values with -1, presumably because the customer in question has not ordered since that order
+        - Change to **int8**
     - `day_of_week`: Name of the day of the week, assuming `order_dow` 0 = Sunday and the following numbers are consecutive days of the week
         - New column, as **String**
 
@@ -53,9 +48,9 @@
         - Since the values for this are within 0 to 255, let's change this to an **uint8**
 
 - `products.csv`: each row corresponds to a unique product that customers can buy
-    - `id`: ID number that uniquely identifies each product
+    - `product_id`: ID number that uniquely identifies each product
         - this one's already a string but it should have defaulted to a numeric so there's probably something wrong with the data
-            - Tried coerseing `product_id` to be a numberic, but that didn't halp much. 
+            - Tried coerseing `product_id` to be a numberic, but that didn't help much. 
             - Look at dataset: someone put a bunch of `"` at seemingly random intervals. Siiiigh
             - Also there are `\"` occasionally which indicats I can't just delete all the `"`s from the data.
                 - I replace all `\"` with some other string that I made sure is not in the data set, `real quote`.
@@ -66,7 +61,6 @@
                 - I search with the regex `^(?:[^;]*;){4,}` to see how often this is happening
                     - This happens nine more times, not too many, so I manually fix them all.
             - Check again. That's better
-        - rename from `product_id` to `id`
         - Now that there's one unique value for each row, it's now a Primary Key, let's change this to a **string**
     - `name`: name of the product
         - rename from `product_name` to `name`
