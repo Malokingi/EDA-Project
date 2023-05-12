@@ -22,13 +22,13 @@ Practicum Sprint 7: Exploring and Cleaning Data with Pandas (Exploratory Data An
     - [x] Plot how many people placed how many orders
     - [x] Show `id` and `name` of top 20 Products by order frequency
     - [x] Remark on findings
-- [ ] Hard Part (two or more of these)
-    - [ ] Plot distribution of how many items people have in each order
-    - [ ] Show `id` and `name` of top 20 Products by re-order frequency
-    - [ ] Plot what percentage of each product's orders are re-orders
-    - [ ] Plot what percentage of each person's items ordered are re-orders
-    - [ ] Show `id`, `name`, and frequency of top 20 Products people place in their carts first
-    - [ ] Remark on findings
+- [x] Hard Part (two or more of these)
+    - [x] Plot distribution of how many items people have in each order
+    - [x] Show `id` and `name` of top 20 Products by re-order frequency
+    - [x] Plot what percentage of each product's orders are re-orders
+    - [x] Plot what percentage of each person's items ordered are re-orders
+    - [x] Show `id`, `name`, and frequency of top 20 Products people place in their carts first
+    - [x] Remark on findings
 
 
 ### Submit
