@@ -31,6 +31,6 @@ Practicum Sprint 7: Exploring and Cleaning Data with Pandas (Exploratory Data An
     - [x] Remark on findings
 
 ### Submit
-- [ ] Final check to make sure it works
-- [ ] Update Readme
-- [ ] Submit
+- [x] Final check to make sure it works
+- [x] Update Readme
+- [x] Submit
