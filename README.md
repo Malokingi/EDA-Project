@@ -30,7 +30,6 @@ Practicum Sprint 7: Exploring and Cleaning Data with Pandas (Exploratory Data An
     - [x] Show `id`, `name`, and frequency of top 20 Products people place in their carts first
     - [x] Remark on findings
 
-
 ### Submit
 - [ ] Final check to make sure it works
 - [ ] Update Readme
