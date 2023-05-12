@@ -17,11 +17,11 @@ Practicum Sprint 7: Exploring and Cleaning Data with Pandas (Exploratory Data An
     - [x] Plot how many people place orders by `order_dow`
     - [x] Plot how many days pass between people placeing orders
     - [x] Remark on findings
-- [ ] Intermediate Part
-    - [ ] Plot hour of day orders were placed on Saturdays and Wednesdays
-    - [ ] Plot how many people place how many orders
-    - [ ] Show `id` and `name` of top 20 Products by order frequency
-    - [ ] Remark on findings
+- [x] Intermediate Part
+    - [x] Plot hour of day orders were placed on Saturdays and Wednesdays
+    - [x] Plot how many people placed how many orders
+    - [x] Show `id` and `name` of top 20 Products by order frequency
+    - [x] Remark on findings
 - [ ] Hard Part (two or more of these)
     - [ ] Plot distribution of how many items people have in each order
     - [ ] Show `id` and `name` of top 20 Products by re-order frequency

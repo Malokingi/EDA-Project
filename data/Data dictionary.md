@@ -2,7 +2,6 @@
     - `id`: ID number that uniquely identifies each grocery aisle category
         - rename from `aisle_id` to `id`
         - As a Primary Key, let's change this to a **string**
-        - Let's also set the **index** to this
     - `name`: name of the aisle
         - rename from `aisle` to `name`
         - Keep this a **string**
@@ -10,8 +9,7 @@
 - `departments.csv`
     - `id`: ID number that uniquely identifies each grocery department category
         - rename from `department_id` to `id`
-        - As a Primary Key, let's change this to a **string**
-        - Let's also set the **index** to this
+        - As a Primary Key, let's change this to a **string*
     - `name`: name of the department
         - rename from `department` to `name`
         - Keep this a **string**
@@ -22,7 +20,6 @@
             - After dropping dup;licate rows, all cols are unique
         - rename from `order_id` to `id`
         - As a Primary Key, let's change this to a **string**
-        - Let's also set the **index** to this
     - `user_id`: ID number that uniquely identifies each customer account
         - As a Foriegn Key, let's change this to a **string**
     - `user_order_number`: the number of times this customer has placed an order
@@ -36,7 +33,7 @@
         - Since the values for this are within 0 to 255, let's change this to an **uint8**
     - `days_since_prior_order`: number of days since this customer placed their previous order
         - Replace all the NaN values with -1, presumably because the customer in question has not ordered since that order
-        - change to **int8**
+        - Change to **int8**
     - `day_of_week`: Name of the day of the week, assuming `order_dow` 0 = Sunday and the following numbers are consecutive days of the week
         - New column, as **String**
 
